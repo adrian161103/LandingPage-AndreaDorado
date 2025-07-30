@@ -8,9 +8,9 @@ import Page from '../components/Page';
 // Página principal Home
 const Home = () => {
   return (
-    <main className=" color-black-50">
+    <main className=" color-black-50 ">
       <Page   >
-      <Hero />
+      <Hero backgroundUrl="/img/Theraphy.jpg" />
       <About />
       <Services />
       <Testimonials />
