@@ -1,14 +1,39 @@
-// Componente About
 const About = () => {
-  return <section className="marginGeneric">
-    <h2>About</h2>
-    <p>Contenido de la sección About</p>
-     {/* <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.279505612556!2d-58.42151492353121!3d-34.59709305714961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7d3e4cbbdf%3A0xad6c7065d0e9a2fe!2sJer%C3%B3nimo%20Salguero%201164%2C%20C1177AEV%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1753808116641!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div> */}
-  
-  </section>;
-  
+  return (
+    <section id="about" className="py-16">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center md:items-center gap-8">
+          
+          {/* Imagen - 40% en pantallas medianas y mayores */}
+          <div className="w-full md:w-[40%]">
+            <img
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              src="/img/Test.jpg"
+              alt="imagen de testeo"
+            />
+          </div>
+
+          {/* Texto - 60% */}
+          <div className="w-full md:w-[60%]">
+            <h2 className="text-3xl font-semibold mb-4 text-center md:text-left">
+              ¿Quién soy?
+            </h2>
+            <p className="text-[#7F8C9A] leading-relaxed text-center md:text-left text-lg">
+              Soy Andrea Dorado, Licenciada en Psicología por la UBA y Supervisora
+              Clínica, con más de 35 años de experiencia. Me dedico al
+              acompañamiento de adolescentes, adultos y adultos mayores que
+              atraviesan ansiedad, depresión, crisis vitales, duelos y problemáticas
+              vinculares. Mi enfoque integra herramientas psicoanalíticas y terapias
+              focalizadas, ofreciendo un espacio seguro y confidencial. Mi objetivo
+              es brindarte la contención y las herramientas necesarias para
+              potenciar tu bienestar emocional.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default About;
