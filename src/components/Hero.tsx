@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = ({ backgroundUrl }) => {
 
       {/* Contenido */}
       <div className="relative z-10 container mx-auto px-4 text-center md:text-left">
-        <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+        <h1 className="text-5xl md:text-6xl font-bold text-[#ff99cc] mb-4">
           LIC. ANDREA DORADO
         </h1>
         <p className="text-xl md:text-2xl text-gray-100 mb-6">
@@ -53,7 +53,7 @@ const Hero: React.FC<HeroProps> = ({ backgroundUrl }) => {
         <div className="space-x-4">
           <a
             href="#contact"
-            className="inline-block px-6 py-3 bg-[#1DA1F2] hover:bg-blue-600  text-white rounded-lg transition-all duration-[1000ms]"
+            className="inline-block px-6 py-3 bg-[#ffffcc] hover:bg-[#ff99cc] hover:text-white  text-black rounded-lg transition-all duration-[1000ms]"
           >
             Solicitar turno
           </a>

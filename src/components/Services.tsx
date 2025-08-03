@@ -15,7 +15,6 @@ const serviciosData: ServiceItem[] = [
   {
     title: "Depresión",
     description: "Soporte para transitar estados de tristeza profunda y falta de motivación.",
-    imageUrl: "/img/depresion.jpg",
   },
   {
     title: "Crisis Vitales",
@@ -24,21 +23,19 @@ const serviciosData: ServiceItem[] = [
   {
     title: "Duelos",
     description: "Acompañamiento en procesos de pérdida y duelo.",
-    imageUrl: "/img/duelos.jpg",
   },
   {
     title: "Problemáticas Vinculares",
     description: "Terapia de pareja y familiar para mejorar la comunicación y vínculo.",
-    imageUrl: "/img/vinculos.jpg",
   },
 ];
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-16 bg-gray-50">
+    <section id="services" className="py-16 ">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-semibold mb-8 text-center text-gray-800">
-          Especialidades
+        <h2 className="text-5xl font-semibold mb-10 text-center text-gray-800 especialidades">
+         Especialidades
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {serviciosData.map((servicio) => (
@@ -53,23 +50,23 @@ const Services: React.FC = () => {
             >
               {/* Imagen de fondo si existe */}
               {servicio.imageUrl ? (
-                <img
-                  src={servicio.imageUrl}
-                  alt={servicio.title}
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full relative">
+                  <img
+                    src={servicio.imageUrl}
+                    alt={servicio.title}
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Overlay solo si hay imagen */}
+                  <div
+                    className="absolute inset-0 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-1000 z-10"
+                  />
+                </div>
               ) : (
-                <div className="w-full h-full bg-blue-100" />
+                <div className="w-full h-full bg-black" />
               )}
 
               {/* Overlay semi-transparente */}
-              <div
-                className="
-                  absolute inset-0 bg-black bg-opacity-80 
-                  group-hover:bg-opacity-60 transition-opacity 
-                  duration-300 z-10
-                "
-              />
+              {/* El overlay global se elimina, ya que ahora está dentro del bloque de imagen */}
 
               {/* Contenido */}
               <div
@@ -81,7 +78,7 @@ const Services: React.FC = () => {
                 <h3 className="text-xl font-bold text-white mb-2">
                   {servicio.title}
                 </h3>
-                <p className="text-sm text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm text-white opacity-0 group-hover:opacity-100 transition-opacity duration-800">
                   {servicio.description}
                 </p>
               </div>

@@ -1,3 +1,13 @@
 .marginGeneric{
   margin: 5dvh 0;
 }
+
+.especialidades::before,
+.especialidades::after {
+  border-top: .2rem solid black;
+  content: "";
+  display: inline-block;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+  width: 5rem;
+}
