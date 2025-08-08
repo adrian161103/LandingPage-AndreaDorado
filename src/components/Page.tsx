@@ -15,7 +15,6 @@ const navLinks: NavLink[] = [
   { label: "Inicio", href: "#hero" },
   { label: "Trayectoria", href: "#about" },
   { label: "Atención Psicoanalítica", href: "#services" },
-  { label: "El Andén", href: "#anden" },
   { label: "Contacto", href: "#contact" },
 ];
 
