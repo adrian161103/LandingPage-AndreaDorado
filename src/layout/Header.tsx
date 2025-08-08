@@ -10,7 +10,7 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ navLinks }) => (
-  <header className="w-full bg-[#F8F4ED] text-[#7F8C9A] shadow-md sticky top-0 z-50">
+  <header role="banner" className="w-full bg-[#F8F4ED] text-[#7F8C9A] shadow-md sticky top-0 z-50">
     <nav className="container mx-auto flex items-center justify-between py-4 px-6">
       <div className="text-xl font-bold"> <a href="">Andrea Dorado</a></div>
       <ul className="flex space-x-6">

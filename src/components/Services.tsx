@@ -53,7 +53,7 @@ const Services: React.FC = () => {
                 group relative h-64 rounded-lg overflow-hidden 
                 shadow-sm bg-white hover:shadow-md 
                 transform hover:scale-105 transition 
-                duration-300 ease-in-out
+                duration-300 ease-in-out focus:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-sky-400
               "
             >
               {/* Imagen de fondo si existe */}
@@ -62,6 +62,7 @@ const Services: React.FC = () => {
                   <img
                     src={servicio.imageUrl}
                     alt={servicio.title}
+                    
                     className="w-full h-full object-cover"
                   />
                   {/* Overlay solo si hay imagen */}
@@ -80,7 +81,7 @@ const Services: React.FC = () => {
                 <h3 className="text-xl font-bold text-white mb-2">
                   {servicio.title}
                 </h3>
-                <p className="text-sm text-white opacity-0 group-hover:opacity-100 transition-opacity duration-800">
+                <p className="text-sm text-white opacity-0 group-hover:opacity-100 transition-opacity group-focus:opacity-100 duration-800">
                   {servicio.description}
                 </p>
               </div>

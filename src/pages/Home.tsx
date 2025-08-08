@@ -7,14 +7,14 @@ import Page from '../components/Page';
 // Página principal Home
 const Home = () => {
   return (
-    <main className=" color-black-50 bg-[#FCFBF9] ">
       <Page   >
+    <main id="main" role="main" className=" color-black-50 bg-[#FCFBF9] ">
       <Hero backgroundUrl="/img/Theraphy.jpg" />
       <About />
       <Services />
       <ContactForm />
-      </Page>
     </main>
+      </Page>
   );
 };
 

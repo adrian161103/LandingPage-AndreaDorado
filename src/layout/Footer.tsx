@@ -35,7 +35,7 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ socials, navLinks, contactInfo, paymentMethods = [] }) => (
-  <footer className="bg-[#F8F4ED] text-[#7F8C9A] py-8 mt-auto">
+  <footer role="contentinfo" className="bg-[#F8F4ED] text-[#7F8C9A] py-8 mt-auto">
     <div className="container mx-auto flex flex-col md:flex-row justify-between items-start gap-8 px-6">
      
       <div>

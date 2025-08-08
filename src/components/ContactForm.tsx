@@ -141,8 +141,9 @@ const handleWhatsapp = () => {
               </div>
 
               <button
+              aria-label="Enviar mensaje"
                 type="submit"
-                className="w-full py-3 cursor-pointer bg-[#e5b3fe] hover:text-[#7F8C9A] rounded-lg hover:bg-[#ffffcc] text-black transition duration-[1000ms]"
+                className="w-full  py-3 cursor-pointer bg-[#e5b3fe] hover:text-[#7F8C9A] rounded-lg hover:bg-[#ffffcc] text-black transition duration-[1000ms]"
               >
                 Enviar mensaje
               </button>
