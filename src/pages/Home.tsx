@@ -9,7 +9,7 @@ const Home = () => {
   return (
       <Page   >
     <main id="main" role="main" className=" color-black-50 bg-[#FCFBF9] ">
-      <Hero backgroundUrl="/img/Theraphy.jpg" />
+      <Hero backgroundUrl="/img/therapy-hero.webp" />
       <About />
       <Services />
       <ContactForm />

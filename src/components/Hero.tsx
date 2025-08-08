@@ -17,23 +17,24 @@ const Hero: React.FC<HeroProps> = ({ backgroundUrl }) => {
 
   const zoom = 1 + Math.min(offsetY / 1000, 0.3);
   const blur = Math.min(offsetY / 50, 15);
+
   return (
     <section
       id="hero"
       className="relative w-full h-screen flex items-center overflow-hidden"
     >
       {/* Imagen de fondo con blur y zoom */}
-      <div
-        className="absolute inset-0 w-full h-full"
-        aria-hidden="true"
+      <img
+        src={backgroundUrl}
+        alt="Psicóloga tomando la mano de paciente en consulta"
+        className="absolute inset-0 w-full h-full object-cover"
         style={{
-          backgroundImage: `url(${backgroundUrl})`,
-          backgroundSize: `${zoom * 100}%`,
-          backgroundPosition: "center",
+          transform: `scale(${zoom})`,
           filter: `blur(${blur}px)`,
-          transition: "background-size 0.8s linear, filter 1s linear"
+          transition: "transform 0.8s linear, filter 1s linear",
         }}
       />
+
       {/* Overlay negro semitransparente */}
       <div className="absolute inset-0 bg-black opacity-40" />
 
@@ -52,7 +53,7 @@ const Hero: React.FC<HeroProps> = ({ backgroundUrl }) => {
         <div className="space-x-4">
           <a
             href="#contact"
-            className="inline-block px-6 py-3 bg-[#ffffcc] hover:bg-[#e5b3fe] hover:text-[#7F8C9A]  text-black rounded-lg transition-all duration-[1000ms]"
+            className="inline-block px-6 py-3 bg-[#ffffcc] hover:bg-[#e5b3fe] hover:text-[#7F8C9A] text-black rounded-lg transition-all duration-[1000ms]"
           >
             Solicitar turno
           </a>
