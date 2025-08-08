@@ -72,7 +72,7 @@ const Footer: React.FC<FooterProps> = ({ socials, navLinks, contactInfo, payment
         <p>Email: <a href={`mailto:${contactInfo.email}`} className="hover:underline">{contactInfo.email}</a></p>
         <div className="mt-2">
           {contactInfo.addresses.map((address, i) => (
-           <p> <a href={contactInfo.href} key={i}>{address} </a> </p>
+           <p> <a className="hover:underline" target="_blank" href={contactInfo.href} key={i}>{address} </a> </p>
           ))}
         </div>
       </div>

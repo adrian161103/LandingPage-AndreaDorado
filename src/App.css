@@ -11,3 +11,9 @@
   transform: translateY(-1rem);
   width: 5rem;
 }
+
+
+
+  html {
+    scroll-behavior: smooth;
+  }

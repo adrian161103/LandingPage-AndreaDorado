@@ -142,7 +142,7 @@ const handleWhatsapp = () => {
 
               <button
                 type="submit"
-                className="w-full py-3 cursor-pointer bg-[#ff99cc] text-white rounded-lg hover:bg-[#ffffcc] hover:text-black transition duration-[1000ms]"
+                className="w-full py-3 cursor-pointer bg-[#e5b3fe] hover:text-[#7F8C9A] rounded-lg hover:bg-[#ffffcc] text-black transition duration-[1000ms]"
               >
                 Enviar mensaje
               </button>
@@ -152,13 +152,13 @@ const handleWhatsapp = () => {
           <aside className="space-y-4 md:self-center">
             <p className="text-lg">
               <strong>Teléfono:</strong>{" "}
-              <a href="tel:+541151091962" className="text-blue-600 hover:underline">
+              <a href="tel:+541151091962" className="text-[#23658B] hover:underline">
                 11 5109 1962
               </a>
             </p>
             <p className="text-lg">
               <strong>Email:</strong>{" "}
-              <a href="mailto:lic.andreadorado@gmail.com" className="text-blue-600 hover:underline">
+              <a href="mailto:lic.andreadorado@gmail.com" className="text-[#23658B] hover:underline">
                 lic.andreadorado@gmail.com
               </a>
             </p>

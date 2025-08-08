@@ -7,7 +7,7 @@ const About = () => {
           <div className="w-full md:w-[40%]" >
             <img
               className="w-full h-auto rounded-xl shadow-md object-cover"
-              src="/img/Test.jpg"
+              src="/img/Therapy2.jpg"
               alt="imagen de testeo"
              
             />
