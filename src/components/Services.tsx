@@ -4,6 +4,7 @@ export interface ServiceItem {
   title: string;
   description: string;
   imageUrl?: string;
+  alt: string;
 }
 
 const serviciosData: ServiceItem[] = [
@@ -11,30 +12,37 @@ const serviciosData: ServiceItem[] = [
     title: "Ansiedad",
     description:
       "Acompañamiento en el manejo de estrés, ataques de pánico y fobias.",
-    imageUrl: "/img/anxietyTherapy.jpg",
+    imageUrl: "/img/specialty-anxiety.webp",
+    alt:"Paciente con síntomas de ansiedad en consulta psicológica"
+
   },
   {
     title: "Depresión",
     description:
       "Soporte para transitar estados de tristeza profunda y falta de motivación.",
-    imageUrl: "/img/DepressionTherapy.png",
+    imageUrl: "/img/specialty-depression.webp",
+    alt: "Persona con signos de depresión recibiendo apoyo psicológico"
   },
   {
     title: "Crisis Vitales",
     description:
       "Herramientas para afrontar cambios y rupturas vitales significativas.",
-    imageUrl: "/img/VitalCrises.png",
+    imageUrl: "/img/specialty-vital-crises.webp",
+    alt: "Hombre angustiado en sesión por crisis vital"
+
   },
   {
     title: "Duelos",
     description: "Acompañamiento en procesos de pérdida y duelo.",
-    imageUrl: "/img/DuelTherapy.jpg",
+    imageUrl: "/img/specialty-duel.webp",
+    alt: "Paciente recibiendo contención emocional durante duelo"
   },
   {
     title: "Problemáticas Vinculares",
     description:
       "Terapia de pareja y familiar para mejorar la comunicación y vínculo.",
-    imageUrl: "/img/BondignTherapy.jpg",
+    imageUrl: "/img/specialty-bonding-therapy.webp",
+    alt: "Terapia de pareja y familiar para mejorar la comunicación"
   },
 ];
 
@@ -60,9 +68,9 @@ const Services: React.FC = () => {
               {servicio.imageUrl ? (
                 <div className="w-full h-full relative">
                   <img
+                  loading="lazy"
                     src={servicio.imageUrl}
-                    alt={servicio.title}
-                    
+                    alt={servicio.alt}
                     className="w-full h-full object-cover"
                   />
                   {/* Overlay solo si hay imagen */}

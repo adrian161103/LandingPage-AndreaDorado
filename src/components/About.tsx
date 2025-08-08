@@ -7,8 +7,8 @@ const About = () => {
           <div className="w-full md:w-[40%]" >
             <img
               className="w-full h-auto rounded-xl shadow-md object-cover"
-              src="/img/Therapy2.jpg"
-              alt="imagen de testeo"
+              src="/img/about-therapy.webp"
+              alt="Psicóloga escribiendo notas durante sesión de terapia"
              
             />
           </div>
