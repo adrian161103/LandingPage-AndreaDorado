@@ -15,7 +15,6 @@ const Hero: React.FC<HeroProps> = ({ backgroundUrl }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Zoom máximo: 1.3x (ajustable)
   const zoom = 1 + Math.min(offsetY / 1000, 0.3);
   const blur = Math.min(offsetY / 50, 15);
   return (
