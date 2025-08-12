@@ -11,7 +11,7 @@ import type { HeaderNavLink } from "../layout/Header";
 const navLinks: NavLink[] = [
   { label: "Inicio", href: "#hero" },
   { label: "Trayectoria", href: "#about" },
-  { label: "Atención Psicoanalítica", href: "#services" },
+  { label: "Atención psicologica", href: "#services" },
   { label: "Contacto", href: "#contact" },
 ];
 
@@ -45,8 +45,8 @@ interface PageProps {
 }
 
 const Page: React.FC<PageProps> = ({
-  title = "Andrea Dorado | Psicoanalista",
-  description = "Lic. Andrea Dorado - Atención Psicoanalítica, Trayectoria, El Andén, Contacto.",
+  title = "Andrea Dorado | Psicóloga",
+  description = "Lic. Andrea Dorado - Atención psicológica, Trayectoria, El Andén, Contacto.",
   children,
 }) => {
   return (

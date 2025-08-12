@@ -15,7 +15,7 @@ const About = () => {
 
           {/* Texto - 60% */}
           <div className="w-full md:w-[60%]">
-            <h2 className="text-6xl font-semibold text-[#ff99cc] mb-8 text-center md:text-left">
+            <h2 className="text-6xl font-semibold text-[#e5b3fe] mb-8 text-center md:text-left">
               ¿Quién soy?
             </h2>
             <p className="text-[#7F8C9A] leading-relaxed text-center md:text-left text-xl">
