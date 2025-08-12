@@ -61,16 +61,19 @@ const Services: React.FC = () => {
                 group relative h-64 rounded-lg overflow-hidden 
                 shadow-sm bg-white hover:shadow-md 
                 transform hover:scale-105 transition 
-                duration-300 ease-in-out focus:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-sky-400
-              "
+                duration-300 ease-in-out focus:scale-[1.03] focus:outline-none"       
+            itemScope
+            itemType="https://schema.org/Service"
             >
               {/* Imagen de fondo si existe */}
               {servicio.imageUrl ? (
                 <div className="w-full h-full relative">
                   <img
                   loading="lazy"
+                  decoding="async"
                     src={servicio.imageUrl}
                     alt={servicio.alt}
+                    itemProp="image"
                     className="w-full h-full object-cover"
                   />
                   {/* Overlay solo si hay imagen */}
@@ -86,10 +89,13 @@ const Services: React.FC = () => {
                   justify-center text-center px-4 z-20
                 "
               >
-                <h3 className="text-xl font-bold text-white mb-2">
+                         <meta itemProp="serviceType" content={servicio.title} />
+
+                <h3 itemProp="name" className= "text-xl font-bold text-white mb-2">
                   {servicio.title}
                 </h3>
-                <p className="text-sm text-white opacity-0 group-hover:opacity-100 transition-opacity group-focus:opacity-100 duration-800">
+                <meta itemProp="description" content={servicio.description} />
+                <p itemProp="description" className="text-sm text-white opacity-0 group-hover:opacity-100 transition-opacity group-focus:opacity-100 duration-800">
                   {servicio.description}
                 </p>
               </div>

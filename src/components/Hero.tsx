@@ -22,12 +22,15 @@ const Hero: React.FC<HeroProps> = ({ backgroundUrl }) => {
     <section
       id="hero"
       className="relative w-full h-screen flex items-center overflow-hidden"
+      itemScope
+      itemType="https://schema.org/Person"
     >
       {/* Imagen de fondo con blur y zoom */}
       <img
         src={backgroundUrl}
         alt="Psicóloga tomando la mano de paciente en consulta"
         className="absolute inset-0 w-full h-full object-cover"
+        fetchPriority="high"
         style={{
           transform: `scale(${zoom})`,
           filter: `blur(${blur}px)`,
@@ -44,7 +47,7 @@ const Hero: React.FC<HeroProps> = ({ backgroundUrl }) => {
           LIC. ANDREA DORADO
         </h1>
         <p className="text-xl md:text-2xl text-gray-100 mb-6">
-          Especialista en Ansiedad, Depresión y Adicción
+          Especialista en Ansiedad, Depresión, crisis vitales, duelos y problemáticas vinculares
         </p>
         <p className="text-sm md:text-base text-gray-200 mb-8">
           🎓 Lic. en Psicología (UBA) • 35 años de experiencia  
