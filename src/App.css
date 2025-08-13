@@ -11,8 +11,18 @@
   transform: translateY(-1rem);
   width: 5rem;
 }
-
-
+@media (max-width: 484px) {
+  .especialidades::before,
+  .especialidades::after {
+    width: 14rem;
+  }
+}
+@media (min-width: 485px) and (max-width: 570px) {
+  .especialidades::before,
+  .especialidades::after {
+    width:2rem;
+  }
+}
 
   html {
     scroll-behavior: smooth;
