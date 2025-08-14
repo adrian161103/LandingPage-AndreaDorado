@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>
-      Lic. Andrea Dorado — Psicóloga (UBA) | Ansiedad • Depresión • Adicciones
+      Lic. Andrea Dorado — Psicóloga (UBA) | Ansiedad • Depresión • crisis
+      vitales • Duelos • Problemáticas vinculares
     </title>
     <meta
       name="description"
@@ -38,13 +39,11 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://andreadorado.com.ar/" />
     <meta
-      property="og:logo"
-      content="https://andreadorado.com.ar/logo-1024.png"
-    />
-    <meta
       property="og:image"
       content="https://andreadorado.com.ar/logo-1024.png"
     />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
     <meta property="og:locale" content="es_AR" />
 
     <!-- Twitter -->
@@ -52,7 +51,7 @@
     <meta name="twitter:title" content="Lic. Andrea Dorado — Psicóloga (UBA)" />
     <meta
       name="twitter:description"
-      content="Terapia presencial y online. Especialista en ansiedad, depresión y adicciones."
+      content="Terapia presencial y online. Especialista en ansiedad, depresión crisis vitales, duelos y problemáticas vinculares. 35 años de experiencia."
     />
     <meta
       name="twitter:image"
@@ -70,42 +69,58 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": ["LocalBusiness", "MedicalBusiness", "Psychologist"],
-        "@id": "https://andreadorado.com.ar/#clinic",
-        "name": "Lic. Andrea Dorado",
-        "jobTitle": "Psicóloga",
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "Universidad de Buenos Aires (UBA)"
-        },
-        "description": "Especialista en ansiedad, depresión y adicciones. 35 años de experiencia.",
-        "image": "https://andreadorado.com.ar/img/therapy-hero.webp",
-        "logo": "https://andreadorado.com.ar/logo-1024.png",
-        "telephone": "+541151091962",
-        "email": "mailto:lic.andreadorado@gmail.com",
-        "medicalSpecialty": "Psychology",
-        "hasMap": "https://maps.app.goo.gl/1tSkeux2qWhWS2js7",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "CABA",
-          "addressRegion": "Buenos Aires",
-          "addressCountry": "AR"
-        },
-        "areaServed": "CABA, AR",
-        "sameAs": [
-          "https://maps.app.goo.gl/1tSkeux2qWhWS2js7",
-          "https://instagram.com/lic.andreadoradook"
-        ],
-        "url": "https://andreadorado.com.ar/"
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://andreadorado.com.ar/#andrea-dorado",
+            "name": "Lic. Andrea Dorado",
+            "jobTitle": "Psicóloga (UBA)",
+            "url": "https://andreadorado.com.ar/",
+            "image": "https://andreadorado.com.ar/logo-1024.png",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Universidad de Buenos Aires"
+            },
+            "sameAs": [
+              "https://instagram.com/lic.andreadoradook",
+              "https://maps.app.goo.gl/1tSkeux2qWhWS2js7"
+            ]
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://andreadorado.com.ar/#consultorio",
+            "name": "Lic. Andrea Dorado — Psicóloga",
+            "url": "https://andreadorado.com.ar/",
+            "image": "https://andreadorado.com.ar/img/therapy-hero.webp",
+            "logo": "https://andreadorado.com.ar/logo-1024.png",
+            "telephone": "+541151091962",
+            "email": "lic.andreadorado@gmail.com",
+            "areaServed": "CABA, AR",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Jerónimo Salguero 1164",
+              "addressLocality": "CABA",
+              "addressRegion": "Buenos Aires",
+              "postalCode": "C1177",
+              "addressCountry": "AR"
+            },
+            "hasMap": "https://maps.app.goo.gl/1tSkeux2qWhWS2js7",
+            "sameAs": ["https://instagram.com/lic.andreadoradook"],
+            "provider": { "@id": "https://andreadorado.com.ar/#andrea-dorado" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://andreadorado.com.ar/#website",
+            "url": "https://andreadorado.com.ar/",
+            "name": "Andrea Dorado Psicóloga",
+            "publisher": { "@id": "https://andreadorado.com.ar/#consultorio" }
+          }
+        ]
       }
     </script>
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="/logo-1024.png"
-      sizes="1024x1024"
-    />
+    <link rel="icon" type="image/png" href="/logo-192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/logo-1024.png" sizes="1024x1024" />
     <link rel="stylesheet" href="/src/index.css" />
     <script type="module" crossorigin src="/src/main.tsx"></script>
   </head>
