@@ -1,69 +1,92 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Landing Page - Andrea Dorado
 
-Currently, two official plugins are available:
+Landing page profesional para **Lic. Andrea Dorado — Psicóloga (UBA)**, desarrollada con **React**, **TypeScript** y **Tailwind CSS**.  
+Optimizada para **SEO**, totalmente **responsive** y enfocada en la accesibilidad y la experiencia del usuario.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Produccion en vivo
+[https://adreadorado.vercel.app/](https://adreadorado.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📋 Descripción
+Este proyecto tiene como objetivo presentar de forma clara y atractiva los servicios de la Lic. Andrea Dorado, psicóloga especializada en:
+- Ansiedad
+- Depresión
+- Crisis vitales
+- Duelos
+- Problemáticas vinculares
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+La página está optimizada para motores de búsqueda y cuenta con un diseño adaptable a todo tipo de dispositivos, priorizando la velocidad de carga y la accesibilidad.
+
+---
+
+## 🚀 Tecnologías utilizadas
+- **React** – Librería para la construcción de interfaces de usuario
+- **TypeScript** – Tipado estático para mayor robustez
+- **Tailwind CSS** – Framework de estilos para diseño rápido y consistente
+- **Vercel** – Plataforma de despliegue y hosting
+- **Vite** – Herramienta de build rápida para desarrollo moderno
+
+---
+
+## 📂 Estructura del proyecto
+.
+├── public/ # Recursos públicos (favicon, imágenes estáticas)
+├── src/
+│ ├── assets/ # Imágenes y recursos
+│ ├── components/ # Componentes reutilizables
+│ ├── pages/ # Páginas principales
+│ ├── styles/ # Estilos globales
+│ ├── App.tsx # Componente raíz
+│ └── main.tsx # Punto de entrada
+├── package.json
+└── tsconfig.json
+
+---
+
+## ⚙️ Instalación y uso
+
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/adrian161103/LandingPage-AndreaDorado.git
+```
+### 2. Instalar dependencias
+```bash
+npm install
+```
+### 3. Iniciar el servidor de desarrollo
+```bash
+npm run dev
+```
+### 4. Generar build de producción
+```bash
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📌 Características
+- Diseño responsive adaptado a móviles, tablets y desktop
+- Optimización SEO con metaetiquetas y estructura semántica
+- Uso de imágenes WebP para mejorar la velocidad
+- Buenas prácticas de accesibilidad (etiquetas alt, contraste adecuado, estructura semántica)
+- Código modular y fácil de mantener
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 📄 Licencia
+Este proyecto está bajo la licencia MIT.
+Eres libre de usarlo y modificarlo, siempre que se otorgue el crédito correspondiente.
+
+---
+
+## 👤 Autor
+Adrián Alejos García
+
+[GitHub](https://github.com/adrian161103)
+
+[LinkedIn](https://www.linkedin.com/in/adrianalejosgarcia/)
